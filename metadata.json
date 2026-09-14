@@ -1,0 +1,6 @@
+{
+  "name": "Maisarah Konveksi",
+  "description": "Website resmi Maisarah Konveksi — Jasa Menjahit Busana Kustom & Retail Perlengkapan Jahit di Ulee Glee, Aceh Pidie Jaya. Tailor terpercaya untuk busana impian Anda.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
