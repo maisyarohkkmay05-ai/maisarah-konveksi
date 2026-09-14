@@ -1,7 +1,7 @@
 import React from 'react';
 import { Scissors, MapPin, Phone, Mail, Clock, MessageCircle, Heart } from 'lucide-react';
 import { StoreSettings } from '../types';
-import { generateWaLink, getGeneralConsultationMsg } from '../utils/whatsapp';
+import { generateWaLink, getGeneralConsultationMsg, formatPhoneNumberDisplay } from '../utils/whatsapp';
 
 interface FooterProps {
   settings: StoreSettings;
@@ -136,7 +136,7 @@ export const Footer: React.FC<FooterProps> = ({ settings, onNavigate, onOpenAdmi
               </div>
               <div className="flex items-center gap-2">
                 <MessageCircle className="w-4 h-4 text-emerald-400 shrink-0" />
-                <span>+{settings.whatsappNumber}</span>
+                <span>{formatPhoneNumberDisplay(settings.whatsappNumber)}</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-emerald-400 shrink-0" />

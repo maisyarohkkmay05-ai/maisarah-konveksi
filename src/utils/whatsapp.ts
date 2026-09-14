@@ -14,6 +14,25 @@ export function cleanPhoneForWa(phone: string): string {
   return digitsOnly;
 }
 
+export function formatPhoneNumberDisplay(phone: string): string {
+  const digits = phone.replace(/\D/g, '');
+  // normalize to 08...
+  let local = digits;
+  if (local.startsWith('62')) {
+    local = '0' + local.slice(2);
+  }
+  if (local.length === 12) {
+    return `${local.slice(0, 4)}-${local.slice(4, 8)}-${local.slice(8)}`;
+  }
+  if (local.length === 11) {
+    return `${local.slice(0, 4)}-${local.slice(4, 7)}-${local.slice(7)}`;
+  }
+  if (local.length === 13) {
+    return `${local.slice(0, 4)}-${local.slice(4, 8)}-${local.slice(8)}`;
+  }
+  return local || phone;
+}
+
 export function generateWaLink(phone: string, text: string): string {
   const cleanPhone = cleanPhoneForWa(phone);
   const encodedText = encodeURIComponent(text.trim());

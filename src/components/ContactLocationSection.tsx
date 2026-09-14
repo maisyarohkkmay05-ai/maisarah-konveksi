@@ -12,7 +12,7 @@ import {
   ShieldCheck
 } from 'lucide-react';
 import { StoreSettings } from '../types';
-import { generateWaLink } from '../utils/whatsapp';
+import { generateWaLink, formatPhoneNumberDisplay } from '../utils/whatsapp';
 
 interface ContactLocationSectionProps {
   settings: StoreSettings;
@@ -112,7 +112,9 @@ Mohon informasi selanjutnya. Terima kasih.`;
                   <MessageCircle className="w-4 h-4 text-emerald-600 shrink-0" />
                   <div>
                     <div className="font-bold">WhatsApp Aktif</div>
-                    <div className="text-[11px] text-stone-500">+{settings.whatsappNumber}</div>
+                    <div className="text-[11px] text-stone-600 font-medium">
+                      {formatPhoneNumberDisplay(settings.whatsappNumber)}
+                    </div>
                   </div>
                 </a>
 

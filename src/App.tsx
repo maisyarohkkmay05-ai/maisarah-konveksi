@@ -44,7 +44,14 @@ export default function App() {
   const [settings, setSettings] = useState<StoreSettings>(() => {
     try {
       const saved = localStorage.getItem(STORAGE_KEYS.SETTINGS);
-      if (saved) return JSON.parse(saved);
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        // Ensure new WhatsApp number is used if still on old default
+        if (parsed.whatsappNumber === '6282277889900' || !parsed.whatsappNumber) {
+          parsed.whatsappNumber = initialStoreSettings.whatsappNumber;
+        }
+        return parsed;
+      }
     } catch {
       // fallback
     }

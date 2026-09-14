@@ -3,7 +3,7 @@ import { ProductItem, ServiceItem, PortfolioItem, TestimonialItem, StoreSettings
 export const initialStoreSettings: StoreSettings = {
   shopName: 'Maisarah Konveksi',
   tagline: 'Tailor Terpercaya untuk Busana Impian Anda',
-  whatsappNumber: '6282277889900', // Format tanpa simbol untuk direct wa.me URL
+  whatsappNumber: '6282366557653', // Format tanpa simbol untuk direct wa.me URL
   email: 'maisyarohkkmay05@gmail.com',
   address: 'Jl. Banda Aceh - Medan Km. 165, Pasar Ulee Glee',
   subdistrict: 'Kec. Bandar Dua',
@@ -28,7 +28,7 @@ export const initialServices: ServiceItem[] = [
     turnaroundDays: '4–7 hari kerja',
     description: 'Jahitan baju kurung, abaya, dan gamis modern dengan siluet anggun, jahitan dalam bersih, dan kenyamanan saat dikenakan beraktivitas.',
     features: ['Potongan pas tubuh & tidak ketat', 'Jahitan stik balik rapi', 'Pilihan furing adem', 'Bisa request wudhu friendly (resleting/kancing manset)'],
-    image: 'https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?auto=format&fit=crop&w=800&q=80',
     popular: true
   },
   {
@@ -41,7 +41,7 @@ export const initialServices: ServiceItem[] = [
     turnaroundDays: '5–10 hari kerja',
     description: 'Kreasi kebaya kutubaru, kebaya kartini, encim, hingga gaun pesta elegan dengan furing premium dan pemasangan payet yang teliti.',
     features: ['Pola kupnat presisi membingkai lekuk tubuh', 'Aplikasi renda & brokat simetris', 'Furing lembut anti gatal', 'Garansi fitting ulang 100%'],
-    image: 'https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=800&q=80',
     popular: true
   },
   {
